@@ -1,6 +1,6 @@
 
 
 
-export class AreaMappingComponent {
+export class AreaMappingcomponent {
 
 }

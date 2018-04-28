@@ -1,15 +1,15 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {TransationComponent} from './transation.component';
-import {AreaMappingComponent} from './area-mapping/area-mapping.component';
+import {Transationcomponent} from './transation.component';
+import {AreaMappingcomponent} from './area-mapping/area-mapping.component';
 
 const routes: Routes = [{
     path:'',
-    component: TransationComponent,
+    component: Transationcomponent,
     children:[ {
         path:'area-mapping',
-        component:AreaMappingComponent
+        component:AreaMappingcomponent
     }
 ]
 }]

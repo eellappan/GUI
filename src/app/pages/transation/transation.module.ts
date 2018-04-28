@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 
 import { ThemeModule } from '../../@theme/theme.module';
-import { AreaMappingComponent} from './area-mapping/area-mapping.component';
-import { TransationComponent} from './transation.component';
+import { AreaMappingcomponent} from './area-mapping/area-mapping.component';
+import { Transationcomponent} from './transation.component';
 import { TransationRoutingModule} from './transation-routing.module';
 
 const components = [
-    AreaMappingComponent,
-    TransationComponent
+  AreaMappingcomponent,
+    Transationcomponent
 ];
 
 @NgModule({

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ngx-ui-features',
+  selector: 'ngx-transation',
   template: `
     <router-outlet></router-outlet>
   `,
 })
-export class TransationComponent {
+export class Transationcomponent {
 }
