@@ -6,7 +6,9 @@
   nb-layout-column.small {
     flex: 0.15 !important;
   }
-
+  nb-layout-column.main-content{
+    background-color: white;
+  }
   nb-sidebar.settings-sidebar {
     $sidebar-width: 7.5rem;
 
@@ -38,7 +40,8 @@
       }
 
       @include nb-for-theme(cosmic) {
-        background: nb-theme(layout-bg);
+       // background: nb-theme(layout-bg);
+       background-color: white;
       }
     }
   }
