@@ -1,0 +1,84 @@
+@import '../../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/bootstrap/breakpoints';
+@import '~@nebular/theme/styles/global/bootstrap/buttons';
+
+@include nb-install-component() {
+    text-align: center;
+  
+    .dropdown, .btn-group {
+      margin-bottom: 1rem;
+    }
+// text box 
+    .input-group {
+        margin-bottom: 1rem;
+      }
+      .input-group.has-person-icon {
+        position: relative;
+    
+        .form-control {
+          padding-left: 3rem;
+        }
+    
+        &::before {
+          content: '\F47D';
+          font-family: 'Ionicons';
+          font-size: 2rem;
+          position: absolute;
+          z-index: 100;
+          left: 1rem;
+          top: 0.25rem;
+        }
+      }
+      //button 
+      .none {
+        position: relative;
+        transform: rotate(45deg);
+    
+        &::before, &::after {
+          position: absolute;
+          content: '';
+          background: nb-theme(form-control-border-color);
+        }
+    
+        &::before {
+          left: 50%;
+          top: 10%;
+          transform: translateX(-50%);
+          width: 1px;
+          height: 80%;
+        }
+    
+        &::after {
+          top: 50%;
+          left: 10%;
+          transform: translateY(-50%);
+          height: 1px;
+          width: 80%;
+        }
+      }
+      .secondary-container {
+        .border {
+          color: nb-theme(btn-secondary-color);
+          border: nb-theme(btn-secondary-border-width) solid nb-theme(btn-secondary-border);
+        }
+        .glow {
+          box-shadow: btn-hero-secondary-glow();
+        }
+        .bevel {
+          box-shadow: btn-hero-secondary-bevel();
+        }
+      }
+    .shadow {
+      box-shadow: nb-theme(btn-hero-shadow);
+    }
+    .btn-hero-secondary
+    {
+      width:120px;
+    }
+   
+    nb-card-body {
+      overflow: visible;
+    //  padding-bottom: 0;
+    }
+  }

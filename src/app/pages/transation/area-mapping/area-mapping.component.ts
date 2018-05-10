@@ -41,7 +41,7 @@ export class AreaMappingcomponent  implements OnDestroy{
         class: 'btn-hero-secondary',
         container: 'secondary-container',
         title: 'Ghost Button',
-        buttonTitle: 'Save',
+        buttonTitle: '  Save ',
         disable:'true',
         default: {
           border: '#dadfe6',
@@ -57,7 +57,7 @@ export class AreaMappingcomponent  implements OnDestroy{
         class: 'btn-hero-secondary',
         container: 'secondary-container',
         title: 'Ghost Button',
-        buttonTitle: 'View',
+        buttonTitle: '  View ',
         disable:'true',
         default: {
           border: '#dadfe6',
@@ -73,7 +73,7 @@ export class AreaMappingcomponent  implements OnDestroy{
         class: 'btn-hero-secondary',
         container: 'secondary-container',
         title: 'Ghost Button',
-        buttonTitle: 'Modify',
+        buttonTitle: ' Modify',
         disable:'true',
         default: {
           border: '#dadfe6',
@@ -105,7 +105,7 @@ export class AreaMappingcomponent  implements OnDestroy{
         class: 'btn-hero-secondary',
         container: 'secondary-container',
         title: 'Ghost Button',
-        buttonTitle: 'Cancel',
+        buttonTitle: 'Cancel ',
         disable:'true',
         default: {
           border: '#dadfe6',

@@ -55,19 +55,19 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
       {
         title: 'Release Order Entry',
-        link: '/pages/forms/inputs',
+        link: '/pages/transation/release-order-entry',
       },
       {
         title: 'Media Estimate',
-        link: '/pages/forms/inputs',
+        link: '/pages/transation/media-estimate',
       },
       {
         title: 'Invoice Register',
-        link: '/pages/forms/inputs',
+        link: '/pages/transation/invoice-register',
       },
       {
         title: 'Publication Bill Entry',
-        link: '/pages/forms/inputs',
+        link: '/pages/transation/publication-bill-entry',
       }
     ]
   },

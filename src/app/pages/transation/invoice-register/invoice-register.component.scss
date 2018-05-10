@@ -1,0 +1,8 @@
+@import '../../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/bootstrap/breakpoints';
+@import '~@nebular/theme/styles/global/bootstrap/buttons';
+
+@include nb-install-component() {
+    text-align: center;
+}
