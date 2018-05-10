@@ -1,7 +1,19 @@
 <div class="row">
+    <div class="col-md-12">
+    <form>
+    <div class="row">
+        <div class="col-md-12">
+          <nb-card class="inline-form-card">
+            <nb-card-header>Release Order Entry</nb-card-header>
+            <nb-card-body>
+            </nb-card-body>
+          </nb-card>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-6">
             <nb-card>
-                <nb-card-header>Release Order Entry</nb-card-header>
+                <nb-card-header></nb-card-header>
                 <nb-card-body>
                         <div class="form-group row">
                             <label for="inputEmail1" class="col-sm-3 col-form-label">Release No</label>
@@ -44,11 +56,17 @@
                                 </div>
                         </div>  
                         <div class="form-group row">
-                                <label for="inputEmail1" class="col-sm-3 col-form-label">Client Name</label>
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Client Address</label>
                                 <div class="col-sm-9">
                                         <textarea rows="3" placeholder="Client Address" class="form-control"></textarea>
                                 </div>
                         </div>
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Quotation Date</label>
+                                <div class="col-sm-9">
+                                  <input type="email" class="form-control" id="inputEmail1" placeholder="Quotation Date">
+                                </div>
+                        </div>  
                 </nb-card-body>
             </nb-card>
         </div>
@@ -120,3 +138,20 @@
             </nb-card>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+          <nb-card class="inline-form-card">
+            <nb-card-header></nb-card-header>
+            <nb-card-body>
+                    <div class="row full-name-inputs" >
+                            <div class="col-sm-2 container-btn" *ngFor="let hb of settings">
+                                <button [disabled]="" class="btn {{ hb.class }} btn-demo">{{ hb.buttonTitle }}</button>
+                            </div>
+                    </div>
+            </nb-card-body>
+          </nb-card>
+        </div>
+    </div>
+    </form>
+    </div>
+</div>
