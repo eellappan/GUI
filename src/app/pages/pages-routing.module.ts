@@ -13,7 +13,7 @@ const routes: Routes = [{
   },
   {
     path: 'master',
-    loadChildren: './ui-features/ui-features.module#UiFeaturesModule',
+    loadChildren: './master/master.module#MasterModule',
   },
   {
     path: 'transation',

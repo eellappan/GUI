@@ -16,32 +16,32 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-person',
     children:[
       {
-        title: 'Edtion Master',
-        link: '/pages/ui-features/buttons',
+        title: 'Edition Master',
+        link: '/pages/master/edition-master',
       },
       {
         title: 'Publication Master',
-        link: '/pages/ui-features/buttons',
+        link: '/pages/master/publication-master',
       },
       {
         title: 'Category Master',
-        link: '/pages/ui-features/buttons',
+        link: '/pages/master/category-master',
       },
       {
         title: 'Client Master',
-        link: '/pages/ui-features/buttons',
+        link: '/pages/master/client-master',
       },
       {
         title: 'Nature Master',
-        link: '/pages/ui-features/buttons',
+        link: '/pages/master/nature-master',
       },
       {
         title: 'Tax Master',
-        link: '/pages/ui-features/buttons',
+        link: '/pages/master/tax-master',
       },
       {
         title: 'Meterial Master',
-        link: '/pages/ui-features/buttons',
+        link: '/pages/master/meterial-master',
       }
     ]
   },

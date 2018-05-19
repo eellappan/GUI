@@ -7,9 +7,6 @@ import { NbThemeService } from '@nebular/theme';
   templateUrl: './release-order-entry.component.html',
 })
 
-
-
-
 export class ReleaseOrderEntrycomponent implements OnDestroy{
     themeSubscription: any;
     themeName = 'default';

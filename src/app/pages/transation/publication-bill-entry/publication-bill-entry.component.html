@@ -1,0 +1,106 @@
+<div class="row">
+    <div class="col-md-12">
+    <form>
+    <div class="row">
+        <div class="col-md-12">
+          <nb-card class="inline-form-card">
+            <nb-card-header>Publication Bill Entries</nb-card-header>
+          </nb-card>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <nb-card>
+                <nb-card-header></nb-card-header>
+                <nb-card-body>
+                        <div class="form-group row">
+                            <label for="inputEmail1" class="col-sm-3 col-form-label">Bill No</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputEmail1" placeholder="Bill No">
+                              </div>
+                        </div>  
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Bill Date</label>
+                                <div class="col-sm-9">
+                                  <input type="date" class="form-control" id="inputEmail1" placeholder="Bill Date">
+                                </div>
+                        </div> 
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Publication Name</label>
+                                <div class="col-sm-9">
+                                    <select class="col-sm-9 form-control">
+                                        <option></option>
+                                        <option>abcd</option>
+                                        <option>bcde</option>
+                                </select>
+                                </div>
+                        </div>  
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Client Name</label>
+                                <div class="col-sm-9">
+                                    <select class="col-sm-9 form-control">
+                                        <option></option>
+                                        <option>abcd</option>
+                                        <option>bcde</option>
+                                </select>
+                                </div>
+                        </div>  
+                </nb-card-body>
+            </nb-card>
+        </div>
+        <div class="col-md-6">
+            <nb-card>
+                <nb-card-header></nb-card-header>
+                <nb-card-body>
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Cross Amount</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" id="inputEmail1" placeholder="Cross Amount">
+                                </div>
+                        </div> 
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Commission</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" id="inputEmail1" placeholder="Commission">
+                                </div>
+                        </div> 
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Additional Discount</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" id="inputEmail1" placeholder="Additional Discount">
+                                </div>
+                        </div> 
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Box Office</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" id="inputEmail1" placeholder="Box Office">
+                                </div>
+                        </div> 
+                      
+                        <div class="form-group row">
+                                <label for="inputEmail1" class="col-sm-3 col-form-label">Net Amount</label>
+                                <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inputEmail1" placeholder="Net Amount">
+                                </div>
+                        </div> 
+                </nb-card-body> 
+            </nb-card>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+          <nb-card class="inline-form-card">
+            <nb-card-header></nb-card-header>
+            <nb-card-body>
+                    <div class="row full-name-inputs" >
+                            <div class="col-sm-2 container-btn" *ngFor="let hb of settings">
+                                <button [disabled]="" class="btn {{ hb.class }} btn-demo">{{ hb.buttonTitle }}</button>
+                            </div>
+                    </div>
+            </nb-card-body>
+          </nb-card>
+        </div>
+    </div>
+    </form>
+    </div>
+</div>

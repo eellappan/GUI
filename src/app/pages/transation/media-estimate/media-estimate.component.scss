@@ -76,7 +76,9 @@
     {
       width:120px;
     }
-   
+    nb-card {
+      transform: translate3d(0, 0, 0);
+    }
     nb-card-body {
       overflow: visible;
     //  padding-bottom: 0;

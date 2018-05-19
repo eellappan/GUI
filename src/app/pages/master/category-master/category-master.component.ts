@@ -2,18 +2,18 @@ import { Component, OnDestroy} from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 
 @Component({
-  selector: 'ngx-publication-bill-entry',
-  styleUrls: ['./publication-bill-entry.component.scss'],
-  templateUrl: './publication-bill-entry.component.html',
+  selector: 'ngx-category-master',
+  styleUrls: ['./category-master.component.scss'],
+  templateUrl: './category-master.component.html',
 })
 
 
-
-
-export class PublicationBillEntrycomponent implements OnDestroy{
-  themeSubscription: any;
+export class CategoryMastercomponent  implements OnDestroy{
+  starRate = 2;
+  heartRate = 4;
   themeName = 'default';
   settings: Array<any>;
+  themeSubscription: any;
   constructor(private themeService: NbThemeService) {
     this.themeSubscription = this.themeService.getJsTheme().subscribe(theme => {
       this.themeName = theme.name;
@@ -120,6 +120,6 @@ export class PublicationBillEntrycomponent implements OnDestroy{
     ]}
 
   ngOnDestroy() {
-      this.themeSubscription.unsubscribe();
-    }
+    this.themeSubscription.unsubscribe();
+  }
 }
