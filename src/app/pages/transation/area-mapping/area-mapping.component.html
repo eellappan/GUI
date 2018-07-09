@@ -1,53 +1,21 @@
 <div class="row">
-    <div class="col-lg-12">
+    <div class="col-lg-18">
         <nb-card>
             <nb-card-header>Area Mapping</nb-card-header>
             <nb-card-body>
-                <div class="row full-name-inputs">
-                    <select class="col-sm-4 form-control input-group">
-                                <option>12345</option>
-                                <option>3214</option>
-                                <option>258</option>
-                                <option>789</option>
-                                <option>852</option>
+              <div class="row">
+                <div class="col-md-3">
+                    <select class="form-control input-group"  (change)="onSelect($event)">
+                        <option value="0" selected="selected">Select Publication</option> 
+                        <option *ngFor="let t of types">{{t}}</option>
                     </select>
-                    <div class="col-sm-4 input-group">
-                            <input type="text" placeholder="Publication Name" class="form-control"/>
-                    </div> 
-                    <div class="col-sm-4 input-group">
-                            <input type="text" placeholder="Category Name" class="form-control"/>
-                    </div> 
+                </div>  
+                <div class="col-md-8">
+                        <ng2-smart-table [settings]="settings" [source]="source" (userRowSelect)="onMultipleSelectRow($event)"></ng2-smart-table>
                 </div>
-                <div class="row full-name-inputs">
-                        <div class="col-sm-4 input-group ">
-                                <input type="text" placeholder="Select Region" class="form-control"/>
-                        </div> 
-                        <div class="col-sm-4 input-group ">
-                                <input type="text" placeholder="State Name" class="form-control"/>
-                        </div> 
-                        <div class="col-sm-4 input-group ">
-                                <input type="text" placeholder="Edtion Name" class="form-control"/>
-                        </div>
-                </div>
-                <div class="row full-name-inputs">
-                        <div class="col-sm-4 input-group">
-                                <input type="text" placeholder="Nature" class="form-control"/>
-                        </div> 
-                        <div class="col-sm-4 input-group ">
-                                <input type="text" placeholder="Size" class="form-control"/>
-                        </div> 
-                        <div class="col-sm-4 input-group">
-                                <input type="text" placeholder="Rate" class="form-control"/>
-                        </div>
-                </div>
-                <div class="row full-name-inputs" >
-                        <div class="col-sm-2 container-btn" *ngFor="let hb of settings">
-                            <button [disabled]="" class="btn {{ hb.class }} btn-demo">{{ hb.buttonTitle }}</button>
-                        </div>
-                </div>
-                
-            </nb-card-body>
+              </div>
+             </nb-card-body>
         </nb-card>
-        >
+        
     </div>
 </div>

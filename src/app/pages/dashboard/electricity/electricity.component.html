@@ -22,13 +22,13 @@
 
   <div class="chart-container">
     <div class="chart-header">
-      <div class="header-stats">
+      <!-- <div class="header-stats">
         <div class="stats-block">
           <div class="subtitle">Consumed</div>
-          <div>
+           <div>
             <span class="value">816</span>
             <span class="unit">kWh</span>
-          </div>
+          </div> 
         </div>
 
         <div class="stats-block">
@@ -38,19 +38,21 @@
             <span class="unit">USD</span>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="dropdown" ngbDropdown>
         <button type="button" ngbDropdownToggle class="btn"
                 [ngClass]="{ 'btn-outline-success': currentTheme == 'default', 'btn-primary': currentTheme != 'default'}">
           {{ type }}
         </button>
-        <ul class="dropdown-menu" ngbDropdownMenu>
-          <li class="dropdown-item" *ngFor="let t of types" (click)="type = t">{{ t }}</li>
+        <ul class="dropdown-menu" (change)="onSelect()" ngbDropdownMenu>
+          <li class="dropdown-item" *ngFor="let t of types"   (click)="type = t">{{ t }}</li>
         </ul>
-      </div>
+
+      
+      </div>  
 
     </div>
-    <ngx-electricity-chart></ngx-electricity-chart>
+    <!-- <ngx-electricity-chart></ngx-electricity-chart> -->
   </div>
 </nb-card>

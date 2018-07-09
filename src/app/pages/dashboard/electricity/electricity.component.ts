@@ -14,7 +14,6 @@ export class ElectricityComponent implements OnDestroy {
 
   type = 'week';
   types = ['week', 'month', 'year'];
-
   currentTheme: string;
   themeSubscription: any;
 
@@ -25,7 +24,6 @@ export class ElectricityComponent implements OnDestroy {
       this.currentTheme = theme.name;
     });
   }
-
   ngOnDestroy() {
     this.themeSubscription.unsubscribe();
   }

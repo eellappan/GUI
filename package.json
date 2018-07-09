@@ -7,7 +7,7 @@
     "url": "git+https://github.com/eellappan/GUI.git"
   },
   "bugs": {
-     "url": "https://github.com/eellappan/GUI.git"
+    "url": "https://github.com/eellappan/GUI.git"
   },
   "scripts": {
     "ng": "ng",
@@ -31,11 +31,13 @@
   "dependencies": {
     "@agm/core": "1.0.0-beta.0",
     "@angular/animations": "4.4.6",
+    "@angular/cdk": "^5.2.5",
     "@angular/common": "4.4.6",
     "@angular/compiler": "4.4.6",
-    "@angular/core": "4.4.6",
+    "@angular/core": "^4.4.6",
     "@angular/forms": "4.4.6",
     "@angular/http": "4.4.6",
+    "@angular/material": "^2.0.0-beta.12",
     "@angular/platform-browser": "4.4.6",
     "@angular/platform-browser-dynamic": "4.4.6",
     "@angular/router": "4.4.6",
@@ -44,9 +46,12 @@
     "@nebular/theme": "2.0.0-rc.3",
     "@ng-bootstrap/ng-bootstrap": "1.0.0-beta.5",
     "@swimlane/ngx-charts": "5.2.0",
+    "@swimlane/ngx-datatable": "^13.0.1",
+    "angular-2-data-table": "^0.1.2",
+    "angular-4-data-table": "^0.4.6",
     "angular2-chartjs": "0.3.0",
     "angular2-toaster": "4.0.0",
-    "bootstrap": "4.0.0-beta.2",
+    "bootstrap": "^4.0.0-beta.2",
     "chart.js": "2.5.0",
     "ckeditor": "4.6.2",
     "classlist.js": "1.1.20150312",
@@ -63,6 +68,7 @@
     "ngx-echarts": "1.2.2",
     "normalize.css": "6.0.0",
     "pace-js": "1.0.2",
+    "primeng": "^6.0.0-rc.1",
     "roboto-fontface": "0.8.0",
     "rxjs": "5.5.0",
     "socicon": "3.0.5",
@@ -101,5 +107,10 @@
     "tslint": "5.7.0",
     "tslint-language-service": "0.9.6",
     "typescript": "2.3.4"
-  }
+  },
+  "homepage": "https://github.com/eellappan/GUI#readme",
+  "main": "karma.conf.js",
+  "keywords": [],
+  "author": "",
+  "description": ""
 }

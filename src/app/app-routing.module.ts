@@ -1,5 +1,6 @@
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
+import {NotFoundComponent} from './page-not-found/page-not-found.component';
 import {
   NbAuthComponent,
   NbLoginComponent,
@@ -11,6 +12,7 @@ import {
 
 const routes: Routes = [
   { path: 'pages', loadChildren: 'app/pages/pages.module#PagesModule' },
+  { path: '404', component : NotFoundComponent},
   {
     path: 'auth',
     component: NbAuthComponent,
@@ -43,6 +45,7 @@ const routes: Routes = [
   },
   { path: '', redirectTo: 'pages', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages' },
+  { path: '**', redirectTo: '/404', pathMatch: 'full'}
 ];
 
 const config: ExtraOptions = {
@@ -50,6 +53,7 @@ const config: ExtraOptions = {
 };
 
 @NgModule({
+  declarations: [NotFoundComponent],
   imports: [RouterModule.forRoot(routes, config)],
   exports: [RouterModule],
 })
